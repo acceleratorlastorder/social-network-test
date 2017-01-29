@@ -1,11 +1,14 @@
-body{
-  margin: 0;
-}
 .right, .middle, .left{
   border: 1px solid black;
   border-collapse: collapse;
 }
+.firstpart{
+  margin-top: 4px;
+}
+.secondpart{
+  margin-top: 7px;
+}
 .news::-moz-placeholder {
-  color: pink;
+  color: blue;
   opacity: 1;
 }
