@@ -5,3 +5,7 @@ body{
   border: 1px solid black;
   border-collapse: collapse;
 }
+.news::-moz-placeholder {
+  color: pink;
+  opacity: 1;
+}
