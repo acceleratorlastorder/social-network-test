@@ -9,6 +9,12 @@
 </head>
 
 <body>
+  <body ng-app="helloworld">
+    <a ui-sref="hello" ui-sref-active="active">Hello</a>
+    <a ui-sref="about" ui-sref-active="active">About</a>
+
+    <ui-view></ui-view>
+
     <div class="row center-block">
         <div class="col-md-10 col-md-offset-2">
             <div class="row">
@@ -86,7 +92,9 @@
             </div>
         </div>
     </div>
-    <script src="app.js" charset="utf-8"></script>
+    <script src="node_modules/angular/angular.js"></script>
+    <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
