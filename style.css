@@ -5,6 +5,10 @@ body, .{
   border: 1px solid black;
   border-collapse: collapse;
 }
+.leftprofiletop{
+  background-color: blue;
+  height: 80px;
+}
 .firstpart{
   margin-top: 4px;
 }
