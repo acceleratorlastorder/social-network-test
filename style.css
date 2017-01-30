@@ -1,3 +1,6 @@
+body, .{
+  background-color: rgba(219, 225, 223, 0.7);
+}
 .right, .middle, .left{
   border: 1px solid black;
   border-collapse: collapse;
@@ -9,6 +12,9 @@
   margin-top: 7px;
 }
 .news::-moz-placeholder {
-  color: blue;
+  color: rgba(47, 36, 255, 0.5);
   opacity: 1;
+}
+.article{
+  margin-top: 3px;
 }
