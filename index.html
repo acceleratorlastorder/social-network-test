@@ -9,89 +9,10 @@
 </head>
 
 <body>
-  <body ng-app="helloworld">
-    <a ui-sref="hello" ui-sref-active="active">Hello</a>
-    <a ui-sref="about" ui-sref-active="active">About</a>
-
+  <body ng-app="routing">
+    <a ui-sref="feed" ui-sref-active="active">feed</a>
+    <a ui-sref="login" ui-sref-active="active">About</a>
     <ui-view></ui-view>
-
-    <div class="row center-block">
-        <div class="col-md-10 col-md-offset-2">
-            <div class="row">
-                <div class="col-md-11">
-                    <div class="row firstpart">
-                        <div class="col-md-1">
-                            acceuil
-                        </div>
-                        <div class="col-md-1">
-                            Notification
-                        </div>
-                        <div class="col-md-1">
-                            Messages
-                        </div>
-                        <div class="col-md-2  col-md-offset-1">
-                            <img src="pictures/Twitter_Bird.svg" alt="" class="col-md-4 img-responsive">
-                        </div>
-                        <input class="col-md-2  col-md-offset-1" type="text" name="" placeholder="Recherchez sur Twitter">
-                        <div class="col-md-1 ">
-                            <div class="col-md-10">
-                                <img src="pictures/profilepic.jpg" class="img-rounded img-responsive">
-                            </div>
-                        </div>
-                        <div class="col-md-1">
-                            <button type="button" class="btn btn-primary">Tweeter</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row secondpart">
-                <div class="col-md-3 left profile img-rounded">
-                    <div class="row">
-                      <div class="col-md-12 leftprofiletop">
-                        LOLOLOLOLOLOL
-                      </div>
-                        <div class="col-md-9 ">
-                            <div class="col-md-7">
-                                <div class="col-md-12">
-                                    <img src="pictures/profilepic.jpg" class="img-rounded img-responsive">
-                                </div>
-                            </div>
-                            <div class="col-md-3 ">
-                              ACCELERATOR LASTORDER
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-4 middle">
-                    <div class="row bg-success">
-                        <div class="col-md-14">
-                            <div class="col-md-2">
-                                <img src="pictures/profilepic.jpg" class="img-rounded img-responsive">
-                            </div>
-                            <input class="col-md-9 middle news" type="text" name="" placeholder="Quoi de neuf ?">
-                        </div>
-                    </div>
-
-                    <div class="article img-thumbnail">
-                        <span class="caret col-md-offset-10"></span> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-                        mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
-                        id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                    </div>
-                </div>
-                <div class="col-md-2 right">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
-                    consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-                    in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </div>
-            </div>
-        </div>
-    </div>
     <script src="node_modules/angular/angular.js"></script>
     <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="app.js"></script>
