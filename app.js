@@ -11,6 +11,14 @@ myApp.config(function($stateProvider) {
     url: '/login',
     templateUrl: 'partials/login.html'
   }
+  /*
+  var defaultState = {
+    name: 'default',
+    url: '',
+    templateUrl: ''
+  }
+  $stateProvider.state(defaultState);
+  */
   $stateProvider.state(feedState);
   $stateProvider.state(loginState);
 });
