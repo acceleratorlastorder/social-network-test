@@ -1,16 +1,5 @@
-var myApp = angular.module('routing', ['ui.router']);
-
-myApp.config(function($stateProvider) {
-  var feedState = {
-    name: 'feed',
-    url: '/feed',
-    templateUrl: 'partials/feed.html'
-  }
-  var loginState = {
-    name: 'login',
-    url: '/login',
-    templateUrl: 'partials/login.html'
-  }
-  $stateProvider.state(feedState);
-  $stateProvider.state(loginState);
-});
+let testjson = 'ID:1,text:"lorem ipsum"';
+console.log("testjson is", testjson);
+JSON.parse(testjson);
+console.log("testjson after json is", testjson);
+JSON.stringify(testjson);
