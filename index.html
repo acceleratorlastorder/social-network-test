@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app="routing">
+<html>
 
 <head>
     <meta charset="utf-8">
@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-  <body ng-app="submitExample">
+
+<body ng-app="routing">
     <a ui-sref="feed" ui-sref-active="active">Feed</a>
     <a ui-sref="login" ui-sref-active="active">Login</a>
     <ui-view></ui-view>
@@ -15,21 +16,6 @@
     <script src="node_modules/angular-ui-router/release/angular-ui-router.js"></script>
     <script src="router.js"></script>
     <script src="app.js" charset="utf-8"></script>
-
-    <script>
-    angular.module('submitExample', [])
-    .controller('ExampleController', ['$scope', function($scope) {
-      $scope.list = [];
-      $scope.text = 'hello';
-      $scope.submit = function() {
-        if ($scope.text) {
-          $scope.list.push(this.text);
-          $scope.text = '';
-        }
-      };
-    }]);
-    </script>
-    
 </body>
 
 </html>
