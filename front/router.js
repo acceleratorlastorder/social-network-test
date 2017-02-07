@@ -16,15 +16,12 @@ myApp.config(function($stateProvider) {
 });
 myApp.controller('ExampleController', ['$scope', '$http', "$q", function($scope, $http, $q) {
 
-    // Simple GET request example:
     $http({
         method: 'GET',
-        url: 'feed.json'
+        url: 'http://simplonbox1.local/feed.json'
     }).then(function successCallback(response, data, status) {
         $scope.tweets = response.data.tweets;
-
-        let messages = $scope.tweets[0].message;
-
+        
         console.log("succes on the json get");
         console.log("response: ", response);
         console.log("status: ", response.status);
@@ -35,29 +32,34 @@ myApp.controller('ExampleController', ['$scope', '$http', "$q", function($scope,
         console.log("tweet 3: ", response.data.tweets[2]);
         console.log("tweet 3: ", response.data.tweets[3]);
         console.log("test: ", $scope.tweets);
-        console.log("message", messages);
 
 
         feedthepage($scope.tweets);
 
 
     }, function errorCallback(response) {
-        console.log("error");
+        console.log("error can't get the JSON file from the server");
         document.getElementById("erreur").innerHTML = "Erreur lors de l'appel du json"
     });
 
-    $scope.list = ["lol"];
+    $scope.list = [];
+    /*
     $scope.tweet = localStorage.getItem("tweet");
+    */
     $scope.salut = "";
     $scope.submit = function() {
         if ($scope.text) {
             $scope.list.push(this.text);
+            /*
             localStorage.setItem("tweet", angular.toJson(this.text));
+            */
             $scope.text = '';
-            console.log(localStorage.getItem("tweet"));
+
         }
 
     };
+
+
 
 
     function feedthepage(x) {
@@ -70,8 +72,6 @@ myApp.controller('ExampleController', ['$scope', '$http', "$q", function($scope,
 
         console.log("nombre de tweets :", i);
     }
-
-
 
 }]);
 
