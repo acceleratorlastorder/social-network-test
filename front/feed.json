@@ -8,14 +8,21 @@
         {
             "ID": "002",
             "name": "Lastorder",
-            "islogged": "false",
-            "message": "salut"
+            "islogged": "true",
+            "message": "comment aller vous ?"
         },
         {
             "ID": "003",
             "name": "Misaka",
             "islogged": "true",
-            "message": "yo"
+            "message": "Je vais bien et toi ?"
+        },
+        {
+            "ID": "002",
+            "name": "Lastorder",
+            "islogged": "true",
+            "message": "ça va merci"
         }
+
     ]
 }
