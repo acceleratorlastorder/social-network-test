@@ -16,50 +16,44 @@ myApp.config(function($stateProvider) {
 });
 myApp.controller('ExampleController', ['$scope', '$http', "$q", function($scope, $http, $q) {
 
-    $http({
-        method: 'GET',
-        url: 'http://simplonbox1.local/feed.json'
-    }).then(function successCallback(response, data, status) {
-        $scope.tweets = response.data.tweets;
-        
-        console.log("succes on the json get");
-        console.log("response: ", response);
-        console.log("status: ", response.status);
-        console.log("data: ", response.data);
-        console.log("tweets: ", response.data.tweets);
-        console.log("tweet 1: ", response.data.tweets[0]);
-        console.log("tweet 2: ", response.data.tweets[1]);
-        console.log("tweet 3: ", response.data.tweets[2]);
-        console.log("tweet 3: ", response.data.tweets[3]);
-        console.log("test: ", $scope.tweets);
+  $http({
+      method: 'GET',
+      url: 'feed.json'
+  }).then(function successCallback(response, data, status) {
+      $scope.tweets = response.data.tweets;
 
+      console.log("succes on the json get");
+      console.log("response: ", response);
+      console.log("status: ", response.status);
+      console.log("data: ", response.data);
+      console.log("tweets: ", response.data.tweets);
+      console.log("tweet 1: ", response.data.tweets[0]);
+      console.log("tweet 2: ", response.data.tweets[1]);
+      console.log("tweet 3: ", response.data.tweets[2]);
+      console.log("tweet 3: ", response.data.tweets[3]);
+      console.log("test: ", $scope.tweets);
 
-        feedthepage($scope.tweets);
+      feedthepage($scope.tweets);
 
-
-    }, function errorCallback(response) {
-        console.log("error can't get the JSON file from the server");
-        document.getElementById("erreur").innerHTML = "Erreur lors de l'appel du json"
-    });
+  }, function errorCallback(response) {
+      console.log("error can't get the JSON file from the server");
+      document.getElementById("erreur").innerHTML = "Erreur lors de l'appel du json"
+  });
 
     $scope.list = [];
-    /*
-    $scope.tweet = localStorage.getItem("tweet");
-    */
+    /*       $scope.tweet = localStorage.getItem("tweet");       */
     $scope.salut = "";
     $scope.submit = function() {
+
+        editthejson(); //à metre en input l'input
         if ($scope.text) {
             $scope.list.push(this.text);
-            /*
-            localStorage.setItem("tweet", angular.toJson(this.text));
-            */
+            /*       localStorage.setItem("tweet", angular.toJson(this.text));       */
             $scope.text = '';
 
         }
 
     };
-
-
 
 
     function feedthepage(x) {
@@ -75,11 +69,18 @@ myApp.controller('ExampleController', ['$scope', '$http', "$q", function($scope,
 
 }]);
 
+    function editthejson() {
 
-
-
-
-
+        $http({
+            method: 'POST',
+            url: 'feed.json'
+        }).then(function successCallback(response, data, status) {
+            console.log("salut");
+        }, function errorCallback(response) {
+            console.log("error can't edit the JSON file on the server");
+            document.getElementById("erreur").innerHTML = "Erreur lors de la modification du JSON";
+        });
+    }
 
 
 
