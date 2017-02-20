@@ -4,12 +4,12 @@ myApp.config(function($stateProvider) {
     var feedState = {
         name: 'feed',
         url: '/feed',
-        templateUrl: 'partials/feed.html'
+        templateUrl: '../front/partials/feed.html'
     }
     var loginState = {
         name: 'login',
         url: '/login',
-        templateUrl: 'partials/login.html'
+        templateUrl: '../front/partials/login.html'
     }
     $stateProvider.state(feedState);
     $stateProvider.state(loginState);
@@ -18,7 +18,7 @@ myApp.controller('ExampleController', ['$scope', '$http', "$q", function($scope,
 
   $http({
       method: 'GET',
-      url: 'feed.json'
+      url: 'http://twittertest.local/back/feed.json'
   }).then(function successCallback(response, data, status) {
       $scope.tweets = response.data.tweets;
 
