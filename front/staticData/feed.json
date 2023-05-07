@@ -1,0 +1,28 @@
+{
+    "feeds": [
+        {
+            "userId": 1,
+            "name": "Accelerator",
+            "isLogged": true,
+            "message": "YO !"
+        },
+        {
+            "userId": 2,
+            "name": "Lastorder",
+            "isLogged": true,
+            "message": "How are you?"
+        },
+        {
+            "userId": 3,
+            "name": "Misaka",
+            "isLogged": false,
+            "message": "i'm fine what about you?"
+        },
+        {
+            "userId": 2,
+            "name": "Lastorder",
+            "isLogged": true,
+            "message": "i'm fine thanks!"
+        }
+    ]
+}

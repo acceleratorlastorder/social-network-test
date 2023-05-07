@@ -1,26 +1,26 @@
 {
-    "tweets": [{
-            "ID": "001",
+    "feeds": [{
+            "userId": 1,
             "name": "Accelerator",
-            "islogged": "true",
+            "islogged": true,
             "message": "bonjour je me présente henri et j'aime le riz"
         },
         {
-            "ID": "002",
+            "userId": 2,
             "name": "Lastorder",
-            "islogged": "true",
+            "islogged": true,
             "message": "comment aller vous ?"
         },
         {
-            "ID": "003",
+            "userId": 3,
             "name": "Misaka",
-            "islogged": "true",
+            "islogged": false,
             "message": "Je vais bien et toi ?"
         },
         {
-            "ID": "002",
+            "userId": 2,
             "name": "Lastorder",
-            "islogged": "true",
+            "islogged": true,
             "message": "ça va merci"
         }
 
