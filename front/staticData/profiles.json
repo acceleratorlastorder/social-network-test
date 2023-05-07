@@ -1,0 +1,68 @@
+{
+  "profile": [
+    {
+      "id": 1,
+      "name": "Accelerator",
+      "country": "France",
+      "image": "/staticData/images/accelerator.png",
+      "about": "I like to build things and make them work. I am a full stack developer and I love to work with new technologies. I am a team player and I like to share my knowledge with others. I am a fast learner and I am always looking for new challenges.",
+      "socials": {
+        "facebook": "",
+        "twitter": "",
+        "linkedin": "",
+        "instagram": "",
+        "youtube": "",
+        "github": "",
+        "bitbucket": ""
+      }
+    },
+    {
+      "id": 2,
+      "name": "Founder",
+      "country": "France",
+      "image": "/staticData/images/founder.png",
+      "about": "I like to build things and make them work. I am a full stack developer and I love to work with new technologies. I am a team player and I like to share my knowledge with others. I am a fast learner and I am always looking for new challenges.",
+      "socials": {
+        "facebook": "",
+        "twitter": "",
+        "linkedin": "",
+        "instagram": "",
+        "youtube": "",
+        "github": "",
+        "bitbucket": ""
+      }
+    },
+    {
+      "id": 3,
+      "name": "Mentor",
+      "country": "France",
+      "image": "/staticData/images/mentor.png",
+      "about": "I like to build things and make them work. I am a full stack developer and I love to work with new technologies. I am a team player and I like to share my knowledge with others. I am a fast learner and I am always looking for new challenges.",
+      "socials": {
+        "facebook": "",
+        "twitter": "",
+        "linkedin": "",
+        "instagram": "",
+        "youtube": "",
+        "github": "",
+        "bitbucket": ""
+      }
+    },
+    {
+      "id": 4,
+      "name": "Test",
+      "country": "France",
+      "image": "/staticData/images/test.png",
+      "about": "I like to build things and make them work. I am a full stack developer and I love to work with new technologies. I am a team player and I like to share my knowledge with others. I am a fast learner and I am always looking for new challenges.",
+      "socials": {
+        "facebook": "",
+        "twitter": "",
+        "linkedin": "",
+        "instagram": "",
+        "youtube": "",
+        "github": "",
+        "bitbucket": ""
+      }
+    }
+  ]
+}
